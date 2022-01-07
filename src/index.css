@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.btn {
+		@apply transition duration-150 px-4 py-1 rounded-md font-bold;
+	}
+
+	.btn-primary {
+		@apply bg-rose-500 text-white hover:bg-rose-600;
+	}
+
+	.btn-cancel {
+		@apply bg-slate-200 hover:bg-gray-300;
+	}
+
+	.btn-add {
+		@apply flex items-center gap-2 px-0;
+	}
+
+	.btn-add:hover .material-icons {
+		@apply bg-rose-500 text-white rounded-full transition duration-150;
+	}
+
+	.btn-add:hover span {
+		@apply text-rose-500 transition duration-150;
+	}
+}
